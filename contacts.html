@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CONTACTS</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<style>
+	       body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #;
+            color: white;
+        }
+        .contact-hero {
+            position: relative;
+            padding: 60px 10%;
+            background-color: #fbc6cf;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .section-header h1 { 
+        	font-size: 2.5rem; 
+        	margin: 0; 
+            color: black;}
+        	
+        .section-header p {
+        	color: #aaa; 
+        	max-width: 600px; 
+        }
+        .content-wrapper {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            max-width: 1100px;
+            gap: 50px;
+        }
+        .contact-info { flex: 1; }
+        .info-item {
+        	display: flex;
+        	align-items: center;
+        	margin-bottom: 25px;
+        }
+        .info-icon {
+            width: 45px;
+            height: 45px; 
+            background: white; 
+            border-radius: 50%;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            margin-right: 15px;
+        }
+        .info-icon img { width: 22px; height: 22px; }
+        .info-text h3 { margin: 0; color: #00bcd4; font-size: 16px; }
+        .info-text p { margin: 0; font-size: 14px; color: black; }
+
+        .message-form {
+            flex: 1; background: white; padding: 30px; border-radius: 8px; color: #333;
+        }
+        .message-form h2 { margin-top: 0; font-size: 20px; }
+        .form-group { margin-bottom: 15px; }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px 0; 
+            border: none; 
+            border-bottom: 1px solid #ccc; 
+            outline: none;
+        }
+        .send-btn {
+            background: #00bcd4; color: white; border: none; padding: 10px 25px; cursor: pointer; border-radius: 4px;
+        }
+        .social-section {
+            padding: 50px 10%;
+            background-color: #fbc6cf; 
+            text-align: center;
+        }
+        .social-section h2 {
+        	color: #333;
+        	margin-bottom: 30px;
+        }
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .social-card {
+            display: flex;
+            align-items: center;
+            background: #000;
+            border-radius: 100px;
+            padding: 5px;
+            border: 2px solid white;
+        }
+        .social-pic {
+            width: 60px; 
+            height: 60px; 
+            border-radius: 50%;
+            border: 3px solid white; 
+            overflow: hidden; 
+            flex-shrink: 0;
+        }
+        .social-pic img {
+        	width: 100%;
+        	height: 100%; 
+        	object-fit: cover;
+        }
+
+        .social-text { padding: 0 15px; text-align: left; color: white; }
+        .social-text span { display: block; font-size: 11px; color: #aaa; text-transform: uppercase; }
+        .social-text strong { display: block; font-size: 15px; }
+
+        @media (max-width: 900px) {
+            .content-wrapper, .social-grid { grid-template-columns: 1fr; flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="contact-hero">
+        <div class="section-header">
+            <h1>Contact Me</h1>
+            <p style="color: black;">Any questions or remarks? Just write me a message!</p>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="contact-info">
+                <div class="info-item">
+                    <div class="info-icon"><img src="loc.jpg" alt=""></div>
+                    <div class="info-text"><h3>Address</h3><p>Tumog, Luna, Apayao (Purok Libra)</p></div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon"><img src="call.jpg" alt=""></div>
+                    <div class="info-text"><h3>Phone</h3><p>09668046189</p></div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon"><img src="email.jpg" alt=""></div>
+                    <div class="info-text"><h3>Email</h3><p>shairaangelasaladino@gmail.com</p></div>
+                </div>
+            </div>
+
+            <div class="message-form">
+                <h2>Send Message</h2>
+                <div class="form-group"><input type="text" placeholder="Full Name"></div>
+                <div class="form-group"><input type="email" placeholder="Email"></div>
+                <div class="form-group"><textarea placeholder="Type your message..."></textarea></div>
+                <button class="send-btn">Send</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-section">
+        <h2>Follow My Socials</h2>
+        <div class="social-grid">
+            <div class="social-card">
+                <div class="social-pic"><img src="ig.jpg"></div>
+                <div class="social-text"><span>Instagram</span><strong>@s.shyiee</strong></div>
+            </div>
+            <div class="social-card">
+                <div class="social-pic"><img src="fb.jpg"></div>
+                <div class="social-text"><span>Facebook</span><strong>Shaira Angela Saladino</strong></div>
+            </div>
+            <div class="social-card">
+                <div class="social-pic"><img src="tt.jpg"></div>
+                <div class="social-text"><span>TikTok</span><strong>@s.shyiee</strong></div>
+            </div>
+            <div class="social-card">
+                <div class="social-pic"><img src="tg.jpg"></div>
+                <div class="social-text"><span>Telegram</span><strong>@s.shyiee</strong></div>
+            </div>
+            <div class="social-card">
+                <div class="social-pic"><img src="mess.jpg"></div>
+                <div class="social-text"><span>Messenger</span><strong>Shaira Angela Saladino</strong></div>
+            </div>
+            <div class="social-card">
+                <div class="social-pic"><img src="yt.jpg"></div>
+                <div class="social-text"><span>YouTube</span><strong>Shaira Angela Saladino</strong></div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

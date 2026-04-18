@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About Me</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style type="text/css">
+	.sub-menu{
+		border: 1px solid black;
+		border-collapse: collapse;
+		height: 10vh;
+		width: 100%;
+		table-layout:fixed;
+		background:rgba(193, 84, 121, 1);
+		position:fixed;
+		top: 11vh;
+		text-align: center;
+	}
+	.row td{
+		border: 2px solid black;
+	}
+	.sections div{
+		min-height: 76vh;
+	}
+	#latest{
+		background-color: rgba(251, 198, 207, 1);
+	}
+	#birth{
+		background-color: rgba(255, 150, 175, 1);
+	}
+	#educ{
+		background-color: rgba(251, 116, 168, 1);
+        min-height: 76vh;
+        padding-bottom: 50px;
+        min-height: 76vh;
+        display: block;
+	}
+	#skill{
+		background-color: rgba(252, 142, 172, 1);
+	}
+	.sections{
+		margin-top: 20vh;
+	}
+	.about{
+		display: flex;
+		justify-content:space-between;
+		padding: 15px 10%;
+		gap: 10%;
+		width: 100%;
+		font-size: 16px;
+	}
+	.about-text{
+		flex: 1;
+	}
+	.about-image{
+		flex: 1;
+		height: 300px;
+		width: 300px;
+		border-radius: 50%;
+		top: 50px;
+		left: 25%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.about-image img{
+		height:500px;
+		border-radius: 50%;
+		margin-left: 0;
+		margin: auto;
+		top: 50px;
+		left: 25%;
+		display: block;
+		width: 500px;
+		justify-content: center;
+		align-items: center;
+		background-color: transparent;
+		object-fit: cover;
+	}
+	#latest, #birth, #educ, #skill {
+		scroll-margin-top: 25vh;
+	}
+	@media (max-width: 600px) {
+	.sections{
+		flex-direction: column;
+		text-align: center;
+	}
+	.my-image{
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: auto;
+}
+.educ-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.educ-card {
+    background: rgba(255, 255, 255, 0.4);
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 30%;
+    min-width: 300px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Carousel Styling */
+.carousel {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+    height: 100%;
+}
+
+.carousel-item.active {
+    display: block; 
+}
+
+.carousel-btn {
+    cursor: pointer;
+    background: rgba(193, 84, 121, 1);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+</style>
+
+
+</style>
+	<script>
+function showPopup(){
+    document.getElementById("popup").style.display = "block";
+}
+
+function closePopup(){
+    document.getElementById("popup").style.display = "none";
+}
+</script>
+<body>
+<header>
+		  <ul class="main-nav">
+        <li><a href="#">MY PORTFOLIO</a></li>
+        <li><a href="index.html"><img src="shaira.jpg" class="profile"></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+        <li><a href="profile.html">Profile</a></li>
+    </ul>
+</header>
+
+<table class="sub-menu">
+<tr>
+<td><a href="#latest">Latest</a></td>
+<td><a href="#birth">Birthday</a></td>
+<td><a href="#educ">Education</a></td>
+<td><a href="#skill">Skills</a></td>
+</tr>
+</table>
+
+<div class="sections">
+
+<div id="latest" class="about">
+    <div class="about-text">
+        <h1>LATEST UPDATE</h1>
+        <p> I am Shaira Angela M. Saladino. A 2nd Year College at Apayao State College, currently taking Bachelor of Science in Information Technology.</p>
+		<p>Recently, i have been focusing on becoming more patient, responsible, and confident in everything I do. I try my best to stay positive even when things become challenging, and I believe that every experience helps me grow as a person. I enjoy spending time reflecting on my goals and thinking about how I become a better version of myself.</p> 
+		<p>I also appreciate simple moments such as spending time with my family and friends, relaxing, and doing activities that makes me happy. </p>
+    </div>
+    <div class="about-image">
+        <img src="shy.jpg">
+    </div>
+</div>
+
+<div id="birth">
+<h2>APRIL 2006</h2>
+
+<table class="calendar">
+<tr>
+<th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th>
+<th>Thu</th><th>Fri</th><th>Sat</th>
+</tr>
+
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td></tr>
+<tr><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr>
+<tr><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr>
+<tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td></tr>
+<tr>
+<td>23</td><td>24</td>
+<td class="bday" onclick="showPopup()">25</td>
+<td>26</td><td>27</td><td>28</td><td>29</td>
+</tr>
+<tr><td>30</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+</div>
+
+<div id="educ">
+    <h1 style="text-align: center; padding-top: 20px;">EDUCATIONAL BACKGROUND</h1>
+   
+    <div class="main-slider">
+        <div class="main-slide active">
+            <h2 class="level-title">ELEMENTARY</h2>
+
+            <div class="info-grid">
+                <div class="info-box">
+                    <h4>School Logo</h4>
+                    <a href="elem-gallery.html">
+                    <img src="elem.jpg" class="logo-img" alt="Elem Logo">
+                </a>
+                    <p>Tumog Elementary School</p>
+                </div>
+                <div class="info-box">
+                    <h4>Vision</h4>
+                    <p>We dream of Filipinos who passionately love their<br>
+                     country and whose values and competencies enable <br>
+                     them to realize their full potential and<br>
+                     contribute meaningfully to building the nation.</p>
+                     <p>As a learner-centered public insitutuin, the<br>
+                     Department of Education continuosly improves<br>
+                 intself to better serve its stakeholders.</p>
+                 <h4>Mission</h4>
+                 <p>To protect and promote the right of every Filipino<br>
+                    to quality, equitable, culture-based, and complete<br>
+                    basic education where: Students learn in child<br>
+                    friendly, gender-sensitive, save and  motivating<br>
+                    environment. Teachers facilitate learning and<br>
+                constantly nurture every learner.</p>
+                 </p>
+                </div>
+                <div class="info-box">
+                    <h4 class="fw-bold-text-primary">ACHIEVEMENTS</h4>
+                    <p>• GRADE 1</p>
+                        - 2nd Honor<br>
+                        <p></p>
+                     <p>• GRADE 2</p>
+                        - 8th Honor<br>
+                        <p></p>
+                     <p>• GRADE 3</p>
+                        - 5th Honor<br>
+                        <p></p>
+                    <p>• GRADE 5</p>
+                        - 6th Honor<br>
+                        <p></p>
+                    <p>• GRADE 6</p>
+                        - Conduct Awardee<br>
+                        - Girls Scout of the Philippines<br>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-slide">
+            <h2 class="level-title">HIGH SCHOOL</h2>
+            <div class="info-grid">
+                <div class="info-box">
+                    <h4>School Logo</h4>
+                     <a href="hs-gallery.html">
+                    <img src="hslogo.jpg" class="logo-img" alt="HS Logo">
+                </a>
+                    <p>TUMOG NATHS</p>
+                </div>
+                <div class="info-box">
+                    <h4>SCHOOL HYMN</h4>
+                     <p>Stood upright the wondrous scenery<br>
+                        Your glorious name flourishes brightly<br>
+                        The torch of wisdom shines radiantly<br>
+                        Cradled safely by you and me</p>
+
+                        <p>Oh Tumog High to you we owe<br>
+                         The grandeur our mentors bestow<br>
+                         Unified community and partners<br>
+                         Unfold triumph everyone traverse</p>
+
+                        <p>Hail to you our Alma Mater Source<br>
+                        of wisdom, light, hope, and bliss<br>
+                        Time passes by and change exists<br>
+                        but our loyalty persists</p>
+                        <p>Tumog NATHS shines forevermore</p>
+
+                         <p>You mold our wings, spread our horizon<br>
+                            With teachers dwell brilliance and compassion<br>
+                            We stand still with one dream and vision<br>
+                            Worth promising in every generation</p>
+                        <p>Coda: Tumog High shines forevermore!</p>
+                     </div>
+                <div class="info-box">
+                    <h4>Achievements</h4>
+                    <p>• GRADE 7</p>
+                        - Class President<br>
+                        - Conduct Awardee <br>
+                    <p>• GRADE 8</p>
+                        - With Honor <br>
+                        - Class Vice President <br>
+                        - SSG (Grade 8 - Representative) <br>
+                    <p>• GRADE 9</p>
+                        - With Honor <br>
+                        - Class Secretary <br>
+                    <p>• GRADE 10</p>
+                        - With Honor <br>
+                        - Class Secretary <br>
+                     <p>• GRADE 11</p>
+                        - Conduct Awardee<br>
+                        - Class Secretary <br>
+                        - TMG Hiphop Dance Member
+                    <p>• GRADE 12</p>
+                        - With Honor <br>
+                        - Champion in Jingle Making Competition (Vocalist) <br>
+                        - Outstanding Performance in Work Immersion <br>
+                        - Service Awardee<br>
+                        - Conduct Awardee<br>
+                        - Class Secretary <br>
+                        - Glee Club Secretary<br>
+                        - TMG Hiphop Dance Member<br>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-slide">
+            <h2 class="level-title">COLLEGE</h2>
+            <div class="info-grid">
+                <div class="info-box">
+                    <h4>School Logo</h4>
+                     <a href="college.html">
+                    <img src="college.jpg" class="logo-img" alt="College Logo">
+                </a>
+                    <p></p>
+                    <p>Apayao State College</p>
+                </div>
+                  <div class="info-box">
+            <hr> <div class="hymn-section">
+                <h4>ASC HYMN</h4>
+                <div class="hymn-lyrics">
+                    <p>On March here we are all A-S-Cians<br>
+                    One heart, one soul, one mind<br>
+                    With joy we bravely all stride<br>
+                    ASC is our pride<br>
+                    The future smiles on us<br>
+                    That's why we study hard<br>
+                    This is our school song<br>
+                    For the truth, the just, the right</p>
+                   
+                    <p>Today we all stand<br>
+                    On ASC verdant land<br>
+                    Its beautiful hills and valleys<br>
+                    Wonderful people, rivers, and trees</p>
+                   
+                    <p>Onward we all strive<br>
+                    Thru faith and hope alive<br>
+                    Bring forth happy people<br>
+                    Undivided peaceful tribe</p>
+                   
+                    <p>Forward we all march<br>
+                    Our Visions great and bright<br>
+                    Nourished body and mind<br>
+                    Aspirations great divine</p>
+                </div>
+            </div>
+        </div>
+
+                <div class="info-box">
+                    <h4>Achievements</h4>
+                    <p>BATCHELOR OF SCIENCE</p>
+                     IN INFORMATION TECHNOLOGY<br>
+                    <p>1st Year College</p>
+                     • Dean's Lister (1st Sem)<br>
+                     • Dean's Lister (2nd Sem)<br>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-container">
+            <button class="nav-btn" onclick="changeSlide(-1)">&#10094; Previous</button>
+            <button class="nav-btn" onclick="changeSlide(1)">Next &#10095;</button>
+        </div>
+    </div>
+</div>
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.main-slide');
+
+    function changeSlide(direction) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + direction + slides.length) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+</script>
+
+<div id="skill" class="container-fluid py-5 text-center">
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+        <div class="skill">
+            <img src="hiphop.jpg" alt="Hiphop">
+            <p>Hiphop</p> 
+        </div>
+        <div class="skill">
+            <img src="journal.jpg" alt="Journal">
+            <p>Journaling</p> 
+        </div>
+        <div class="skill">
+            <img src="cooking.jpg" alt="Cooking">
+            <p>Cooking</p> 
+        </div>
+        <div class="skill">
+            <img src="folkdace.jpeg" alt="Folk Dance">
+            <p>Folk Dance</p> 
+        </div>
+        <div class="skill">
+            <img src="dance.jpeg" alt="Dance">
+            <p>Dance</p> 
+        </div>
+        <div class="skill">
+            <img src="paint.jpg" alt="Paint">
+            <p>Paint</p> 
+        </div>
+        <div class="skill">
+            <img src="reading.jpg" alt="Reading">
+            <p>Reading Novels/Romance</p> 
+        </div>
+    </div>
+    </div>
+</div>
+
+<div id="popup" class="popup">
+<div class="popup-content">
+<span onclick="closePopup()" class="close">&times;</span>
+<h2>IT'S SHAIRA'S DAY!</h2>
+<p>April 25 - My Special Day!</p>
+</div>
+</div>
+
+</body>
+</html>
